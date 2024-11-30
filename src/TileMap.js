@@ -151,7 +151,7 @@ export default class TileMap {
     const column = x / this.tileSize;
     if (Number.isInteger(row) && Number.isInteger(column)) {
       if (this.map[row][column] === 0) {
-        this.map[row][column] = 5;
+        this.map[row][column] = 5;  // can also be `null`
         return true
       }
     }
